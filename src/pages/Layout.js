@@ -19,7 +19,8 @@ const tabs = [{
   }]
 const Layout = () => {
   return (
-    <div className="row">
+    <footer className='footer mt-auto py-3 bg-dark text-white'>
+        <div className='container'>
     <div className="col-lg-4">
     <nav className="navbsar navbar-light navbar-expand rounded-pill mb-3 ms-3 me-3 fixed-bottom d-md-none d-lg-none d-xl-none shadow" role="navigation">
       <Nav className="w-100">
@@ -42,6 +43,7 @@ const Layout = () => {
     <Outlet />
     </div>
     </div>
+    </footer>
   )
 };
 
