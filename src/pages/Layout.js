@@ -24,7 +24,7 @@ const Layout = () => {
         <h1 className="text-2xl font-bold">Telegram Web App</h1>
       </header>
       <main className="p-4">
-        <Outlet context={{ user, setUser }} />
+        <h1>Home</h1>
       </main>
       <nav className="fixed bottom-0 w-full bg-gray-200 p-4">
       <Nav className="w-100">
