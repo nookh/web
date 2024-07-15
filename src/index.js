@@ -4,7 +4,7 @@ import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import Blogs from "./pages/Blogs";
 import 'bootstrap/dist/css/bootstrap.css';
-import Background from "./file";
+import StarSky from 'react-star-sky'
 
 export default function App() {
   return (
