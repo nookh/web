@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPeopleArrows, faHome, faTasks } from '@fortawesome/free-solid-svg-icons';
 import './Style.css';
-import {useTelegram} from "./hooks/useTelegram";
+import {useTelegram} from "../hooks/useTelegram";
 
 const tabs = [{
     route: "/",
