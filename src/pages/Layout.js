@@ -24,7 +24,7 @@ const {user, tg} = useTelegram();
 const Layout = () => {
   return (
     <>
-    <span className={'username'}>{user?.username} {user?.photo_url} {user?.first_name}</span>
+    <span className={'username'}>{user?.username} {user?.language_code} {user?.first_name}</span>
     <div className="col-lg-4">
     <nav className="navbsar navbar-light navbar-expand rounded-pill mb-3 ms-3 me-3 fixed-bottom d-md-none d-lg-none d-xl-none shadow" role="navigation">
       <Nav className="w-100">
