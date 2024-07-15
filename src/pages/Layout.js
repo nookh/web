@@ -19,9 +19,9 @@ const tabs = [{
   }]
 const Layout = () => {
   return (
-    <div className="app">
-      <nav className="fixed bottom-0 w-full bg-gray-200 p-4">
-        <Nav className="w-100">
+    <div className="col-lg-4">
+    <nav className="navbsar navbar-light navbar-expand rounded-pill mb-3 ms-3 me-3 fixed-bottom d-md-none d-lg-none d-xl-none shadow" role="navigation">
+      <Nav className="w-100">
         <div className="nav nav-justified w-100">
           {
             tabs.map((tab, index) =>(
@@ -36,9 +36,9 @@ const Layout = () => {
             ))
           }
         </div>
-        </Nav>
-      </nav>
-      <Outlet />
+      </Nav>
+    </nav>
+    <Outlet />
     </div>
   )
 };
