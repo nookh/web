@@ -21,11 +21,6 @@ const tabs = [{
   }]
 
 const {user, tg} = useTelegram();
-
-  useEffect(() => {
-      tg.ready();
-  }, [])
-
 const Layout = () => {
   return (
     <>
