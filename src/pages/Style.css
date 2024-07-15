@@ -1,12 +1,13 @@
 body{
     overflow-y:hidden;
     margin:0;
+    background: black;
   }
   .col-lg-12 {
       background:blue;
   }
   .col-lg-4 {
-      background:rgb(249, 249, 249);
+      background: #cecece;
       float:left;
       width:100%;
       height:100vh;
