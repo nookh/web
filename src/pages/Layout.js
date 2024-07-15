@@ -19,9 +19,9 @@ const tabs = [{
 const Layout = () => {
   return (
     <div>
-    <nav className="navbar fixed-bottom navbar-light d-block d-lg-none bottom-tab-nav" role="navigation">
+    <nav className="navbsar navbar-light navbar-expand rounded-pill mb-3 ms-3 me-3 fixed-bottom d-md-none d-lg-none d-xl-none shadow" role="navigation">
       <Nav className="w-100">
-        <div className=" d-flex flex-row justify-content-around w-100">
+        <div className="nav nav-justified w-100">
           {
             tabs.map((tab, index) =>(
               <NavItem key={`tab-${index}`}>
