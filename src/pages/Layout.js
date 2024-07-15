@@ -19,8 +19,14 @@ const tabs = [{
   }]
 const Layout = () => {
   return (
-    <div className="col-lg-4">
-    <nav className="navbsar navbar-light navbar-expand rounded-pill mb-3 ms-3 me-3 fixed-bottom d-md-none d-lg-none d-xl-none shadow" role="navigation">
+    <div className="app">
+      <header className="bg-blue-500 text-white p-4">
+        <h1 className="text-2xl font-bold">Telegram Web App</h1>
+      </header>
+      <main className="p-4">
+        <Outlet context={{ user, setUser }} />
+      </main>
+      <nav className="fixed bottom-0 w-full bg-gray-200 p-4">
       <Nav className="w-100">
         <div className="nav nav-justified w-100">
           {
@@ -37,8 +43,8 @@ const Layout = () => {
           }
         </div>
       </Nav>
-    </nav>
-    <Outlet />
+      <Outlet />
+      </nav>
     </div>
   )
 };
