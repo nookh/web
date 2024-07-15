@@ -3,10 +3,21 @@ import { Nav, NavItem} from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faHome, faUserCircle } from '@fortawesome/free-solid-svg-icons';
-
+const tabs = [{
+    route: "/home",
+    icon: faHome,
+    label: "Home"
+  },{
+    route: "/blogs",
+    icon: faSearch,
+    label: "Blogs"
+  },{
+    route: "/login",
+    icon: faUserCircle,
+    label: "Login"
+  }]
 const Layout = () => {
   return (
-    <>
     <div>
     <nav className="navbar fixed-bottom navbar-light d-block d-lg-none bottom-tab-nav" role="navigation">
       <Nav className="w-100">
@@ -26,10 +37,8 @@ const Layout = () => {
         </div>
       </Nav>
     </nav>
-    </div>
-
     <Outlet />
-    </>
+    </div>
   )
 };
 
