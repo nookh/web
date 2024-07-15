@@ -10,11 +10,11 @@ export default function App() {
   return (
     <BrowserRouter>
     <StarSky
-        // debugFPS={true}
+        debugFps={true} // Default = false
         isPageBackground={true}
-        // shuffle={0}
-        // starColor='white'
+        shuffle={1}
         frameRate={30}
+        starColor={"rainbow"}
       />
 
       <StarSky
