@@ -8,7 +8,7 @@ body{
   .col-lg-4 {
       background:rgb(249, 249, 249);
       float:left;
-      width:50%;
+      width:100%;
       height:100vh;
       overflow-y:hidden;
   }
