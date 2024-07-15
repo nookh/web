@@ -4,17 +4,24 @@ import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import Blogs from "./pages/Blogs";
 import 'bootstrap/dist/css/bootstrap.css';
-import StarSky from 'react-star-sky'
+import Background from "./file";
 
 export default function App() {
   return (
     <BrowserRouter>
     <StarSky
-        debugFps={true} // Default = false
+        // debugFPS={true}
         isPageBackground={true}
-        shuffle={1}
+        // shuffle={0}
+        // starColor='white'
         frameRate={30}
-        starColor={"rainbow"}
+      />
+
+      <StarSky
+        debugFPS={false}
+        // isPageBackground={false}
+        starColor={[0, 0, 255]}
+        backgroundColor={[0, 0, 10]}
       >
       <Routes>
         <Route path="/" element={<Layout />}>
