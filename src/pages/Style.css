@@ -10,7 +10,7 @@ body{
       float:left;
       width:50%;
       height:100vh;
-      overflow-y:scroll;
+      overflow-y:auto;
   }
   .col-lg-8 {
       background: orange;
