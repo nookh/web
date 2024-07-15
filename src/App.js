@@ -7,9 +7,7 @@ import ProductList from "./components/ProductList/ProductList";
 import Form from "./components/Form/Form";
 import Navigation from "./Navigation";
 import { EarthCanvas } from "./canvas";
-import { motion } from "framer-motion";
-import emailjs from "@emailjs/browser";
-
+import Background from "./file";
 function App() {
     const {onToggleButton, tg} = useTelegram();
 
@@ -25,7 +23,7 @@ function App() {
                 <Route path={'form'} element={<Form />}/>
             </Routes>
             <Navigation />
-            <EarthCanvas />
+            <Background />
         </div>
     );
 }
