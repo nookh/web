@@ -4,7 +4,6 @@ import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faHome, faUserCircle } from '@fortawesome/free-solid-svg-icons';
 import './Style.css';
-
 const tabs = [{
     route: "/home",
     icon: faHome,
@@ -20,7 +19,7 @@ const tabs = [{
   }]
 const Layout = () => {
   return (
-    <div className="footer">
+    <div className="row">
     <div className="col-lg-4">
     <nav className="navbsar navbar-light navbar-expand rounded-pill mb-3 ms-3 me-3 fixed-bottom d-md-none d-lg-none d-xl-none shadow" role="navigation">
       <Nav className="w-100">
