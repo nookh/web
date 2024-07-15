@@ -20,14 +20,8 @@ const tabs = [{
 const Layout = () => {
   return (
     <div className="app">
-      <header className="bg-blue-500 text-white p-4">
-        <h1 className="text-2xl font-bold">Telegram Web App</h1>
-      </header>
-      <main className="p-4">
-        <h1>Home</h1>
-      </main>
       <nav className="fixed bottom-0 w-full bg-gray-200 p-4">
-      <Nav className="w-100">
+        <Nav className="w-100">
         <div className="nav nav-justified w-100">
           {
             tabs.map((tab, index) =>(
@@ -42,9 +36,9 @@ const Layout = () => {
             ))
           }
         </div>
-      </Nav>
-      <Outlet />
+        </Nav>
       </nav>
+      <Outlet />
     </div>
   )
 };
