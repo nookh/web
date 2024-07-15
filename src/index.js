@@ -15,13 +15,14 @@ export default function App() {
         shuffle={1}
         frameRate={30}
         starColor={"rainbow"}
-      />
+      >
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="blogs" element={<Blogs />} />
         </Route>
       </Routes>
+      </StarSky>
     </BrowserRouter>
   );
 }
