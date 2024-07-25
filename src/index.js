@@ -10,7 +10,7 @@ export default function App() {
     <BrowserRouter>
     <div className="App">
       <Routes>
-      <Route index element={<Home />} />
+      <Route index element={<Layout />} />
         <Route path="/" component={<Layout/>} />
         <Route path="/blog" component={<Blogs/>} />
         <Route path="/:post_id" component={<Home/>} />
