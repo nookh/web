@@ -3,7 +3,7 @@ import { useLocation, Link } from "react-router-dom";
 
 const Blogs = (_) => {
   const location = useLocation();
-  console.log(location.replace('blogs/',''));
+  console.log(location.pathname.replace('blogs/',''));
   return (
     <div>
       <div>
