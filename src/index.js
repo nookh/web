@@ -10,9 +10,10 @@ export default function App() {
     <BrowserRouter>
     <div className="App">
       <Routes>
-        <Route exact path="/" component={Layout} />
-        <Route path="/blog" component={Blogs} />
-        <Route path="/:post_id" component={Home} />
+      <Route index element={<Home />} />
+        <Route path="/" component={<Layout/>} />
+        <Route path="/blog" component={<Blogs/>} />
+        <Route path="/:post_id" component={<Home/>} />
       </Routes>
     </div>
   </BrowserRouter>
