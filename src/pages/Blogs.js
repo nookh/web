@@ -1,7 +1,7 @@
 import React from "react";
 import { useLocation, Link } from "react-router-dom";
 
-const ViewUserDetails = (_) => {
+const Blogs = (_) => {
   const { state } = useLocation();
   console.log(state);
   return (
@@ -18,5 +18,4 @@ const ViewUserDetails = (_) => {
     </div>
   );
 };
-
 export default Blogs;
