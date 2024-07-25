@@ -4,18 +4,20 @@ import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import Blogs from "./pages/Blogs";
 import 'bootstrap/dist/css/bootstrap.css';
-import StarSky from 'react-star-sky'
+import Background from "./file";
 
 export default function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="blogs" element={<Blogs />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <div className="App">
+      <NavBar />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/blog" component={Blogs} />
+        <Route path="/:post_id" component={Layout} />
+      </Switch>
+    </div>
+  </BrowserRouter>
   );
 }
 
