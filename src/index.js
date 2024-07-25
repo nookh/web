@@ -8,14 +8,12 @@ import 'bootstrap/dist/css/bootstrap.css';
 export default function App() {
   return (
     <BrowserRouter>
-    <div className="App">
-      <Routes>
-      <Route index element={<Layout />} />
-        <Route path="/" component={<Layout/>} />
-        <Route path="/blog" component={<Blogs/>} />
-        <Route path="/:post_id" component={<Home/>} />
+    <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="blogs" element={<Blogs />} />
+        </Route>
       </Routes>
-    </div>
   </BrowserRouter>
   );
 }
