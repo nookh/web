@@ -2,8 +2,8 @@ import React from "react";
 import { useLocation, Link } from "react-router-dom";
 
 const Blogs = (_) => {
-  const { state } = useLocation();
-  console.log(state);
+  const { location } = useLocation();
+  console.log(location);
   return (
     <div>
       <div>
