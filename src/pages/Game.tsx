@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import coin from "./coin.webp";
+import coin from "./1xbet.webp";
 import React from "react";
 interface FloatingText {
 	id: number;
