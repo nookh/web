@@ -3,18 +3,12 @@ import { BrowserRouter, Routes, Route} from "react-router-dom";
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import Blogs from "./pages/Blogs";
-import 'bootstrap/dist/css/bootstrap.css';
-
+import Game from "./pages/Game.tsx";
+//import 'bootstrap/dist/css/bootstrap.css';
+import "./index.css";
 export default function App() {
   return (
-    <BrowserRouter>
-    <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route exact path="/blogs/:id" element={<Blogs />} />
-        </Route>
-      </Routes>
-  </BrowserRouter>
+    <Game/>
   );
 }
 
