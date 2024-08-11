@@ -29,6 +29,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  
   "browserslist": {
     "production": [
       ">0.2%",
@@ -42,7 +43,24 @@
     ]
   },
   "devDependencies": {
-    "tailwindcss": "^3.4.9",
-    "webpack-cli": "^5.1.4"
-  }
+    "tailwindcss": "^3.4.9"
+  },
+  "compilerOptions": {
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "noFallthroughCasesInSwitch": true,
+    "jsx": "react-jsx"
+  },
+  "include": [
+    "src"
+  ]
 }
