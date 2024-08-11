@@ -2,7 +2,6 @@ import ReactDOM from "react-dom/client";
 import Game from "./pages/Game.tsx";
 import ProfileBar from "./pages/ProfileBar.tsx";
 import BottomNav from "./pages/BottomNav.tsx";
-//import 'bootstrap/dist/css/bootstrap.css';
 import "./index.css";
 export default function App() {
   return (
