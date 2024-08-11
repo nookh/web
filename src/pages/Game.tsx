@@ -12,9 +12,18 @@ const Mine = () => {
 	const [energy, setEnergy] = useState(maxEnergy);
 	const [floatingTexts, setFloatingTexts] = useState<FloatingText[]>([]);
 	const [nextId, setNextId] = useState(0);
+	const [touches, setTouch] = useState(0);
 
-	const handleClick = (e: any) => {
+	const handleMapMove = (e) => {
+		if(e.touches.length == 2){
+		  console.log(e.touches)
+		}
+	 };
+	 
+	const handleClick = (e) => {
 		if (energy > 0) {
+			console.log(e)
+			setTouch((prev) => e.touches);
 			setValue((prev) => prev + 1);
 			setEnergy((prev) => (prev > 0 ? prev - 1 : 0));
 
@@ -60,9 +69,10 @@ const Mine = () => {
 				<div className="flex w-full items-center justify-between">
 					<span className="text-[15px]">Energy</span>
 					<span className="text-[15px] font-semibold">
-						{energy} / {maxEnergy}
+						{energy} / {maxEnergy} / {touches}
 					</span>
 				</div>
+				
 				<div className="w-full relative rounded-full h-[16px] bg-[#012237] border border-[#073755]">
 					<div
 						className="absolute left-0 h-full rounded-full bg-gradient-to-r from-[#dc7b0c] to-[#fff973]"
