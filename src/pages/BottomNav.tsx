@@ -1,6 +1,7 @@
 import { useState } from "react";
 import React from "react";
 import { Flash, LogoBitcoin, People, PersonCircle, Settings } from "react-ionicons";
+import { Outlet, Link, NavLink } from "react-router-dom";
 
 const BottomNav = () => {
 	const [navItems, setNavItems] = useState([
@@ -19,6 +20,7 @@ const BottomNav = () => {
 		);
 	};
 	return (
+        <>
 		<div className="fixsed bottom-0 w-full my-0 mx-auto rounded-2xl bg-[#012237] flex items-center justify-between p-2">
 			{navItems.map((item) => (
 				<div
@@ -35,16 +37,19 @@ const BottomNav = () => {
 								: "!text-[#818288] !fill-[#818288]"
 						}
 					/>
-					<span
+					<NavLink to="/game"><span
 						className={`text-sm font-medium ${
 							item.active ? "text-[#fdb224]" : "text-[#818288]"
 						}`}
 					>
 						{item.title}
 					</span>
+                    </NavLink>
 				</div>
 			))}
 		</div>
+        <Outlet/>
+        </>
 	);
 };
 

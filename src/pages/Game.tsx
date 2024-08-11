@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import coin from "./1xbet.webp";
 import React from "react";
+import BottomNav from "./BottomNav.tsx";
 interface FloatingText {
 	id: number;
 	x: number;
@@ -53,6 +54,7 @@ const Mine = () => {
 		return () => clearInterval(interval);
 	}, []);
 	return (
+		<>
 		<div className="w-full h-full flex flex-col justify-between py-4">
 			<div className="w-full flex items-center justify-center">
 				<span className="font-bold text-[60px]">${value.toLocaleString()}</span>
@@ -90,6 +92,8 @@ const Mine = () => {
 				</span>
 			))}
 		</div>
+		<BottomNav/>
+		</>
 	);
 };
 
