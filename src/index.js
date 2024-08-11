@@ -1,14 +1,14 @@
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route} from "react-router-dom";
-import Layout from "./pages/Layout";
-import Home from "./pages/Home";
-import Blogs from "./pages/Blogs";
 import Game from "./pages/Game.tsx";
+import ProfileBar from "./pages/ProfileBar.tsx";
 //import 'bootstrap/dist/css/bootstrap.css';
 import "./index.css";
 export default function App() {
   return (
-    <Game/>
+    <div className="xl:w-[30%] lg:w-[50%] md:w-[70%] w-full h-screen bg-gradient-to-t from-[#0b0c0e] to-[#00446d] flex flex-col justify-between my-0 mx-auto px-5 py-3">
+      <ProfileBar/>
+      <Game/>
+    </div>
   );
 }
 
