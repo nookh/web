@@ -20,18 +20,18 @@ const Mine = () => {
 		}
 	 };
 	 
-	const handleClick = (e) => {
+	const handleClick = (e: any) => {
 		if (energy > 0) {
 			console.log(e)
-			setTouch((prev) => e.touches);
+			setTouch((prev) => e.touches.length);
 			setValue((prev) => prev + 1);
 			setEnergy((prev) => (prev > 0 ? prev - 1 : 0));
-
-			const { clientX: x, clientY: y } = e;
+			let xcor = e.touches[0].clientX;
+			let ycor = e.touches[0].clientY;
+			const { xcor: x, ycor: y } = e;
 			const newText: FloatingText = { id: nextId, x, y };
 			setFloatingTexts((prev) => [...prev, newText]);
 			setNextId((prev) => prev + 1);
-
 			setTimeout(() => {
 				setFloatingTexts((prev) => prev.filter((text) => text.id !== newText.id));
 			}, 2000);
@@ -61,7 +61,7 @@ const Mine = () => {
 				<img
 					src={coin}
 					alt="coin"
-					onClick={handleClick}
+					onTouchMove={(e) => handleClick(e)}  onTouchStart={handleClick}
 					className="w-[70%] cursor-pointer drop-shadow-2xl coin-button"
 				/>
 			</div>
