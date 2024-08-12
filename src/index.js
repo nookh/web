@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
 import Game from "./pages/Game.tsx";
 import ProfileBar from "./pages/ProfileBar.tsx";
 import BottomNav from "./pages/BottomNav.tsx";
+import Earn from "./pages/Earn.tsx";
 import "./index.css";
 import {useTelegram} from "./hooks/useTelegram";
 
@@ -24,6 +25,8 @@ export default function App() {
       <Routes>
         <Route path="/" element={<RequireAuth><Game/></RequireAuth>}/>
         <Route path="/game" element={<Game />} />
+        <Route path="/earn" element={<Earn />} />
+        <Route path="/friends" element={<Friends />} />
       </Routes>
     </BrowserRouter>
     </div>
