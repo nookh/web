@@ -5,11 +5,9 @@ import { Outlet, Link, NavLink } from "react-router-dom";
 
 const BottomNav = () => {
 	const [navItems, setNavItems] = useState([
-		{ title: "Energy", icon: Flash, active: false },
-		{ title: "Friends", icon: People, active: false },
-		{ title: "Earn", icon: LogoBitcoin, active: true },
-		{ title: "Settings", icon: Settings, active: false },
-		{ title: "Profile", icon: PersonCircle, active: false },
+		{ route: "/game", title: "Energy", icon: Flash, active: false },
+		{ route: "/friends", title: "Friends", icon: People, active: false },
+		{ route: "/earn", title: "Earn", icon: LogoBitcoin, active: true },
 	]);
 
 	const handleActive = (title: string) => {
@@ -37,7 +35,7 @@ const BottomNav = () => {
 								: "!text-[#818288] !fill-[#818288]"
 						}
 					/>
-					<NavLink to="/game"><span
+					<NavLink to={item.route}><span
 						className={`text-sm font-medium ${
 							item.active ? "text-[#fdb224]" : "text-[#818288]"
 						}`}
