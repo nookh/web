@@ -19,7 +19,7 @@ const BottomNav = () => {
 	};
 	return (
         <>
-		<div className="fixsed bottom-0 w-full my-0 mx-auto rounded-2xl bg-[#012237] flex items-center justify-between p-2">
+		<div className="fixed bottom-0 w-full my-0 mx-auto rounded-2xl bg-[#012237] flex items-center justify-between p-2">
 			{navItems.map((item) => (
 				<div
 					key={item.title}
