@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import coin from "./1xbet.webp";
 import React from "react";
 import BottomNav from "./BottomNav.tsx";
+import ProfileBar from "./ProfileBar.tsx";
 interface FloatingText {
 	id: number;
 	x: number;
@@ -55,6 +56,7 @@ const Mine = () => {
 	}, []);
 	return (
 		<>
+		<ProfileBar/>
 		<div className="w-full h-full flex flex-col justify-between py-4">
 			<div className="w-full flex items-center justify-center">
 				<span className="font-bold text-[60px]">${value.toLocaleString()}</span>
