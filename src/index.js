@@ -4,6 +4,7 @@ import Game from "./pages/Game.tsx";
 import ProfileBar from "./pages/ProfileBar.tsx";
 import BottomNav from "./pages/BottomNav.tsx";
 import Earn from "./pages/Earn.tsx";
+import Friends from "./pages/Friends.tsx";
 import "./index.css";
 import {useTelegram} from "./hooks/useTelegram";
 
