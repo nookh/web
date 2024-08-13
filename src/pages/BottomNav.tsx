@@ -66,7 +66,7 @@ const BottomNav = () => {
           <p className="mt-1">Earn</p>
         </div>
         <div className="text-center text-[#85827d] w-1/5">
-          
+          <q>`7`</q>
           <p className="mt-1">Airdrop</p>
         </div>
       </div>

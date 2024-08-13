@@ -57,7 +57,7 @@ const Mine = () => {
 	return (
 		<>
 		<ProfileBar/>
-		<div className="w-full h-full flex flex-col justify-between py-4">
+		<div className="w-full bg-black text-white h-screen font-bold flex flex-col max-w-xl">
 			<div className="w-full flex items-center justify-center">
 				<span className="font-bold text-[60px]">${value.toLocaleString()}</span>
 			</div>
